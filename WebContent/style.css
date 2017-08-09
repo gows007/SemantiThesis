@@ -1,0 +1,290 @@
+@CHARSET "ISO-8859-1";
+
+/* thead.sw tr th {
+	Chrome, Safari, Opera
+	transform: rotate(315deg);
+	overflow: visible;
+} */
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 20px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 0 auto;
+	display: block;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 400px;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Table Entries general */
+#tftable {
+	color: #333333;
+	border-color: #729ea5;
+	border-collapse: collapse;
+	border: 1px solid #729ea5;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .4);
+	width: 500px;
+}
+
+/* Table Header Entries*/
+
+#tftable th {
+	font: 8px Verdana, sans-serif;
+	font-weight: bold;
+	background-color: #acc8cc;
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: #729ea5;
+	text-align: center;
+	overflow: auto;
+	background-color: #acc8cc;
+}
+
+/* Table Rows Entries*/
+
+#tftable tr {
+	background-color: #d4e3e5;
+}
+
+
+#tftable tr:hover {
+	background-color: #ffffff;
+}
+
+/* Table Columns Entries */
+
+#tftable td select, #tftable td input, #tftable td {
+	font: 7px Verdana, sans-serif;
+	border-width: 1px;
+	padding: 1px;
+	border-style: solid;
+	border-color: #729ea5;
+	text-align: center;
+}
+
+table tr td select, table tr td input, table tr td textarea {
+	font: 7px Verdana, sans-serif;
+}
+*/
+
+/* Buttons general */
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff
+		), color-stop(1, #f6f6f6));
+	background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+		endColorstr='#f6f6f6', GradientType=0);
+	background-color: #ffffff;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 3px;
+	border: 1px solid #729ea5;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font: 8px Verdana, sans-serif;
+	font-weight: bold;
+	margin: 10px;
+	padding: 2px 8px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6
+		), color-stop(1, #ffffff));
+	background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6',
+		endColorstr='#ffffff', GradientType=0);
+	background-color: #f6f6f6;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+/* Navigation Container */
+#navcontainer {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+}
+
+#navcontainer ul {
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	font: 8px Verdana, sans-serif;
+}
+
+#navcontainer li {
+	margin-bottom: 8px;
+}
+
+#navcontainer li a {
+	display: block;
+	padding: 3px;
+	width: 80px;
+	background-color: #acc8cc;
+	border-left: 0;
+	text-decoration: none;
+}
+
+li a#current, li a:hover {
+	background-color: #ffffff;
+	margin-left: 10px;
+	border: 1px solid #ffffff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .4);
+}
+
+/* Content general */
+#content {
+	position: absolute;
+	top: 20px;
+	left: 110px;
+	padding: 3px;
+	background-color: #ffffff;
+	border: 1px solid #729ea5;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .4);
+	font: 8px Verdana, sans-serif;
+	position: absolute;
+}
+/*updating css styles - Semanti & Triya*/
+.tftable {
+	background-color: #D4E8EC;
+	top: 40px;
+	height: 300px;
+	width:1000px;
+	padding-left: 85px;
+	font-size: x-large;
+	font-style: normal;
+	font-family: sans-serif;
+	border: 2px solid #A3B3B6;
+	border-radius: 3px;
+}	
+
+/* Pager Link Top & Bottom */
+#pagerLinkBottom {
+	background: #acc8cc;
+	color: #555;
+	text-decoration: none;
+	padding: 3px 5px 3px 5px;
+	display: block;
+	font: 8px Verdana, sans-serif;
+	border-top: 3px solid #a9a9a9;
+}
+
+#pagerLinkTop {
+	background: #acc8cc;
+	color: #555;
+	text-decoration: none;
+	padding: 3px 5px 3px 5px;
+	display: block;
+	font: 8px Verdana, sans-serif;
+	border-bottom: 3px solid #729ea5;
+}
+
+#pagerLinkBottom a, #pagerLinkBottom a:link, #pagerLinkTop a,
+	#pagerLinkTop: a:link {
+	display: inline;
+}
+
+#pagerLinkBottom a:hover, #pagerLinkTop a:hover {
+	color: #039;
+	border-bottom: 3px solid #f90;
+	cursor: pointer;
+	background: #d4e3e5;
+}
+
+.frame {
+	background-color: #fefefe;
+	margin: 0 auto;
+	display: block;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60%;
+	height: 50%;
+}
+
+#spanA, #spanAV, #spanSG {
+	margin-right: 5%;
+	color: #fefefe;
+}
+
+.userguide {
+	font-size: 8pt;
+	font-family: Verdana;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px;
+	color: #fff;
+	background-color: #d4e3e5;
+	text-align: center;
+}
+
+.userguide-content {
+	margin: 10px;
+}
+
+#searchA, #searchT, #searchSG {
+	size: 15;
+	font: 8px Verdana, sans-serif;
+}
+
+#file {
+	margin: 20px;
+	overflow: hidden;
+}

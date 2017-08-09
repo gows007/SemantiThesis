@@ -1,0 +1,91 @@
+body {
+  margin: 50px;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.collapse-group {
+  padding: 10px;
+  border: 1px solid darkgrey;
+  margin-bottom: 10px;
+}
+
+.panel-title .trigger:before {
+  content: '\e082';
+  font-family: 'Glyphicons Halflings';
+  vertical-align: text-bottom;
+}
+
+.panel-title .trigger.collapsed:before {
+  content: '\e081';
+}
+
+table, tr, td, th
+{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+tr.header
+{
+    cursor:pointer;
+}
+.header .sign:after{
+  content:"+";
+  display:inline-block;      
+}
+.header.expand .sign:after{
+  content:"-";
+ }
+ 
+button, html input[type=button], input[type=reset], input[type=submit], filter-by-projectid, btn {
+	-webkit-appearance: button;
+	cursor: pointer
+} 
+ 
+.filter-by-projectid {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+div.scrolledView {
+	width: 50%;
+	overflow: scroll;
+	border:0;
+	margin:0;
+	padding:0;
+	float:left
+}
+div.rightcontainer {
+	border:0;
+	margin:0;
+	padding:0;
+	float: right;
+	width:50%
+}
+
+
+/* class for creating excel colored rows*/
+ 
+.assessment-green{
+	background-color: #84d868;
+}
+
+.assessment-red{
+	background-color: #f92b07;
+}
+
+.assessment-yellow{
+	background-color: yellow;
+}
+
+.assessment-orange{
+	background-color: orange;
+}
+
+
